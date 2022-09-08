@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Start_scene.unity
+    guid: c2e0bb99ebe4c054e93fff14042d241e
+  - enabled: 1
+    path: Assets/Scenes/Game_Scene.unity
+    guid: 8943af1907869514d8dad153a7a593b7
+  - enabled: 1
+    path: Assets/Scenes/End_scene.unity
+    guid: 236bcd67be8ae4343908a3ef7804c439
+  - enabled: 1
+    path: Assets/Scenes/Scene_1_collision_and_triggers.unity
+    guid: f31f30615010d6148852c092bbbaced5
+  m_configObjects: {}
