@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-    public string sceneName; 
+    public string sceneName;
+    public bool useMouseClick = false;
 
     // Update is called once per frame
     void Update()
     {
-        CheckStart();
+        if (useMouseClick)
+        {
+            CheckStart();
+        }
     }
 
     void CheckStart()
@@ -21,6 +25,14 @@ public class SceneSwitch : MonoBehaviour
             //Note that this will require that each SceneManager has a string
             //typed into the Unity Inspector for sceneName.
             SceneManager.LoadScene (sceneName);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player" && useMouseClick == false)
+        {
+            SceneManager.LoadScene(sceneName);
         }
     }
 }
